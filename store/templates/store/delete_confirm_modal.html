@@ -1,0 +1,24 @@
+<form id="delete-form" method="POST">
+    {% csrf_token %}
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">제품 삭제</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Style : 삭제 모달에서 글자 수 10자 제한 -->
+                    <p><strong id="delete-product-name"
+                            style="text-overflow: ellipsis; white-space: nowrap; max-width: 140px;"></strong>을(를)
+                        정말 삭제하시겠습니까?</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-danger" id="confirm-delete">삭제</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

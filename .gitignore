@@ -1,0 +1,45 @@
+# ✅ Python 가상환경 폴더
+venv/
+env/
+
+# ✅ Python 캐시 파일 제거
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+
+# ✅ Django 환경변수 파일 (.env)
+.env
+
+# ✅ 데이터베이스 관련 파일 (SQLite 사용 시)
+db.sqlite3
+*.sqlite3
+
+# ✅ Django 마이그레이션 캐시 제외 (하지만 마이그레이션 파일 자체는 유지해야 함)
+**/migrations/__pycache__/
+**/migrations/*.pyc
+
+# ✅ 로그 파일 제외
+logs/
+*.log
+*.out
+*.err
+
+# ✅ Static 및 Media 파일 제외 (이후 배포 환경에서는 S3 등에 업로드)
+staticfiles/
+media/
+
+# ✅ VSCode 설정 파일 제외
+.vscode/
+*.code-workspace
+
+# ✅ MacOS 관련 불필요한 파일
+.DS_Store
+
+# ✅ Pip 및 Python 관련 파일 제외
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ✅ Django Debug Toolbar 관련 캐시
+debug.log
