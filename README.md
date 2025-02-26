@@ -98,8 +98,8 @@ python manage.py runserver
 
 |기능|경로|
 |---|---|
-|제품 목록||/products/|
-|제품 생성||/products/create/|
+|제품 목록|/products/|
+|제품 생성|/products/create/|
 |제품 수정|/products/<int:pk>/update/|
 |제품 삭제|/products/<int:pk>/delete/|
 |로그인|/accounts/login/|
